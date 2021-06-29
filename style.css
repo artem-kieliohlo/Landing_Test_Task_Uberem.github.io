@@ -1,0 +1,1163 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "TT Travels-Bold";
+  src: url(./fonts/TTTravels-Bold.ttf);
+}
+
+@font-face {
+  font-family: "TT Travels-DemiBold";
+  src: url(./fonts/TTTravels-DemiBold.ttf);
+}
+
+@font-face {
+  font-family: "TT Travels-Light";
+  src: url(./fonts/TTTravels-Light.ttf);
+}
+
+@font-face {
+  font-family: "TT Travels-Medium";
+  src: url(./fonts/TTTravels-Medium.ttf);
+}
+
+@font-face {
+  font-family: "TT Travels-Regular";
+  src: url(./fonts/TTTravels-Regular.ttf);
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-block {
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  padding-left: 3.7%;
+  padding-top: 1.2%;
+  width: 100%;
+}
+
+.logo,
+.switch,
+.block-links,
+.block-connection {
+  display: inline-block;
+}
+
+.logo {
+  padding-top: 0.36%;
+  margin-right: 1.4%;
+}
+
+.switch {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  border: 2px solid white;
+  vertical-align: top;
+  margin-right: 6%;
+}
+
+.switch__button {
+  background-color: inherit;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 0px;
+  color: #636c81;
+}
+
+.switch__button:first-child {
+  margin-right: 4px;
+  padding: 6.3px 11.5px;
+}
+
+.switch__button:last-child {
+  padding: 6.3px 10px;
+}
+
+.switch__button_active {
+  background-color: #5A30F0;
+  color: #FFFFFF;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.switch__button-text {
+  font-size: 14px;
+  font-family: "TT Travels-DemiBold";
+  line-height: 110%;
+}
+
+.block-links {
+  vertical-align: top;
+  padding-top: 0.61%;
+  margin-right: 4.6%;
+}
+
+.list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+@media (max-width: 1290px) {
+  .list-items {
+    gap: 5px;
+  }
+}
+
+.list-items__item {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-items__item-link {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  font-family: "TT Travels-Medium";
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+
+.list-items__item-link:hover {
+  color: #c4c4c4;
+}
+
+.connection-number,
+.time-info,
+.menu {
+  display: inline-block;
+}
+
+.block-connection {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #404040;
+  font-family: "TT Travels-DemiBold";
+  vertical-align: super;
+  position: relative;
+}
+
+.block-connection a {
+  color: inherit;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.connection-number {
+  padding-right: 29px;
+  position: relative;
+  font-weight: 500;
+}
+
+.connection-number:after {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 1.5px;
+  position: absolute;
+  background: #404040;
+  right: 10px;
+  top: 1px;
+}
+
+.time-info {
+  margin-right: 33px;
+}
+
+.menu {
+  width: 22px;
+  height: 10px;
+  background-color: lawngreen;
+}
+
+.primary-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.primary-block-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 10.8%;
+  padding-top: 15.5%;
+}
+
+.primary-block__foto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.header-info {
+  color: #404040;
+  max-width: 384px;
+  font-family: "TT Travels-Regular";
+}
+
+.header-info__title {
+  font-size: 76px;
+  line-height: 110%;
+  margin-bottom: 8%;
+  font-weight: normal;
+}
+
+.header-info__text {
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 5.07%;
+  padding-left: 4.16%;
+  padding-right: 4.16%;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features .feature:nth-child(1) {
+  -webkit-transition: all 0.5s ease 0.1s;
+  transition: all 0.5s ease 0.1s;
+}
+
+.features .feature:nth-child(2) {
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+.features .feature:nth-child(3) {
+  -webkit-transition: all 0.5s ease 0.3s;
+  transition: all 0.5s ease 0.3s;
+}
+
+.features .feature:nth-child(4) {
+  -webkit-transition: all 0.5s ease 0.4s;
+  transition: all 0.5s ease 0.4s;
+}
+
+.aa {
+  width: 100%;
+  height: 1000px;
+}
+
+.feature {
+  position: relative;
+  border-radius: 8px;
+  background-color: #F3F6FB;
+  border-radius: 8px;
+  -ms-flex-preferred-size: 22.72%;
+      flex-basis: 22.72%;
+  -webkit-transform: translate(0, 40%);
+          transform: translate(0, 40%);
+  opacity: 0;
+  min-width: 225px;
+  min-height: 268px;
+  overflow: hidden;
+}
+
+.feature._active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.feature__block {
+  padding-bottom: 71.1%;
+}
+
+.feature__info {
+  background-color: #5A30F0;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+}
+
+.feature__info:hover {
+  visibility: none;
+  height: 100%;
+  z-index: 2;
+  opacity: 1;
+  border-radius: 8px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.feature__info-text {
+  display: inline-block;
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 10% 10% 0 10%;
+  font-family: "TT Travels-Regular";
+}
+
+.feature__title {
+  padding-top: 6.8%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  font-family: "TT Travels-Medium";
+  color: #404040;
+  padding-left: 12.8%;
+  padding-right: 12%;
+  display: inline-block;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  width: 100%;
+}
+
+.feature__foto1 {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.feature__foto2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.feature__foto3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.feature__foto4 {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.information-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1094px;
+  margin: 0 auto;
+  padding-top: 10.65%;
+  padding-right: 0.625%;
+  padding-bottom: 3.47%;
+}
+
+.information-block__info {
+  max-width: 414px;
+  padding-top: 1.11%;
+}
+
+.information-block__info-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #404040;
+  font-family: "TT Travels-Regular";
+}
+
+.information-block__title {
+  padding-left: 0.185%;
+}
+
+.information-block__title-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 120%;
+  font-family: "TT Travels-Regular";
+  color: #404040;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #5A30F0;
+}
+
+.slider__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  font-family: "TT Travels-DemiBold";
+  padding-top: 9.5%;
+  padding-left: 14.05%;
+  padding-bottom: 54%;
+}
+
+.slider__menu {
+  padding-left: 16%;
+  min-width: 330px;
+  max-height: 279px;
+  gap: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.slider__menu-item {
+  display: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 120%;
+  color: #FFFFFF;
+  opacity: 0.7;
+  font-family: "TT Travels-Regular";
+  cursor: pointer;
+}
+
+.slider__menu-item_active {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.slider__menu-item_active::before {
+  content: "→ ";
+}
+
+.slider__foto {
+  position: relative;
+}
+
+.foto-slider {
+  border-radius: 7px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(28, 105, 177, 0.4);
+            box-shadow: 0 0 0 0 rgba(28, 105, 177, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 15px rgba(4, 49, 75, 0);
+            box-shadow: 0 0 0 15px rgba(4, 49, 75, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(6, 31, 85, 0);
+            box-shadow: 0 0 0 0 rgba(6, 31, 85, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(28, 105, 177, 0.4);
+            box-shadow: 0 0 0 0 rgba(28, 105, 177, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 15px rgba(4, 49, 75, 0);
+            box-shadow: 0 0 0 15px rgba(4, 49, 75, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(6, 31, 85, 0);
+            box-shadow: 0 0 0 0 rgba(6, 31, 85, 0);
+  }
+}
+
+.mes {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.foto__button {
+  border-radius: 50%;
+  border: 1px solid #5A30F0;
+  background-color: #5A30F0;
+  color: #FFFFFF;
+  padding: 1px 7px;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+.foto__button._active {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 1.7s;
+          transition-delay: 1.7s;
+}
+
+.foto__button:hover {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.foto__button:hover .mes {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  opacity: 1;
+}
+
+.foto__button._1:nth-child(1), .foto__button._2:nth-child(1), .foto__button._4:nth-child(1) {
+  top: 33%;
+  left: 30%;
+}
+
+.foto__button._1:nth-child(1):hover::before, .foto__button._2:nth-child(1):hover::before, .foto__button._4:nth-child(1):hover::before {
+  color: #636c81;
+  border-radius: 5px;
+  content: "Чистим фасад вытяжки";
+  padding: 8px 10px 8px 10px;
+  width: 210px;
+  position: absolute;
+  top: -43px;
+  font-family: "TT Travels-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  background-color: white;
+  left: -95px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.foto__button._1:nth-child(2), .foto__button._2:nth-child(2), .foto__button._4:nth-child(2) {
+  top: 56%;
+  left: 24.7%;
+}
+
+.foto__button._1:nth-child(2):hover::before, .foto__button._2:nth-child(2):hover::before, .foto__button._4:nth-child(2):hover::before {
+  color: #636c81;
+  border-radius: 5px;
+  content: "Чистим плиту";
+  padding: 8px 10px 8px 10px;
+  width: 210px;
+  position: absolute;
+  top: -43px;
+  font-family: "TT Travels-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  background-color: white;
+  left: -95px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.foto__button._1:nth-child(3), .foto__button._2:nth-child(3), .foto__button._4:nth-child(3) {
+  top: 89.3%;
+  left: 28.2%;
+}
+
+.foto__button._1:nth-child(3):hover::before, .foto__button._2:nth-child(3):hover::before, .foto__button._4:nth-child(3):hover::before {
+  color: #636c81;
+  border-radius: 5px;
+  content: "Моем пол";
+  padding: 8px 10px 8px 10px;
+  width: 210px;
+  position: absolute;
+  top: -43px;
+  font-family: "TT Travels-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  background-color: white;
+  left: -95px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.foto__button._1:nth-child(4), .foto__button._2:nth-child(4), .foto__button._4:nth-child(4) {
+  top: 59.5%;
+  left: 44.3%;
+}
+
+.foto__button._1:nth-child(4):hover::before, .foto__button._2:nth-child(4):hover::before, .foto__button._4:nth-child(4):hover::before {
+  color: #636c81;
+  border-radius: 5px;
+  content: "Выносим  мусор";
+  padding: 8px 10px 8px 10px;
+  width: 210px;
+  position: absolute;
+  top: -43px;
+  font-family: "TT Travels-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  background-color: white;
+  left: -95px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.foto__button._1:nth-child(5), .foto__button._2:nth-child(5), .foto__button._4:nth-child(5) {
+  top: 73.3%;
+  left: 55.6%;
+}
+
+.foto__button._1:nth-child(5):hover::before, .foto__button._2:nth-child(5):hover::before, .foto__button._4:nth-child(5):hover::before {
+  color: #636c81;
+  border-radius: 5px;
+  content: "Протираем столешницу";
+  padding: 8px 10px 8px 10px;
+  width: 210px;
+  position: absolute;
+  top: -43px;
+  font-family: "TT Travels-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  background-color: white;
+  left: -95px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.foto__button._1:nth-child(6), .foto__button._2:nth-child(6), .foto__button._4:nth-child(6) {
+  top: 47.2%;
+  left: 59.4%;
+}
+
+.foto__button._1:nth-child(6):hover::before, .foto__button._2:nth-child(6):hover::before, .foto__button._4:nth-child(6):hover::before {
+  color: #636c81;
+  border-radius: 5px;
+  content: "Моем фасады кухонных гарнитуров";
+  padding: 8px 10px 8px 10px;
+  width: 210px;
+  position: absolute;
+  top: -54px;
+  font-family: "TT Travels-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  background-color: white;
+  left: -103px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.foto__button._1:nth-child(7), .foto__button._2:nth-child(7), .foto__button._4:nth-child(7) {
+  top: 62.3%;
+  left: 78.2%;
+}
+
+.foto__button._1:nth-child(7):hover::before, .foto__button._2:nth-child(7):hover::before, .foto__button._4:nth-child(7):hover::before {
+  color: #636c81;
+  border-radius: 5px;
+  content: "Моем посуду";
+  padding: 8px 10px 8px 10px;
+  width: 210px;
+  position: absolute;
+  top: -43px;
+  font-family: "TT Travels-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  background-color: white;
+  left: -95px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.foto__button._3:nth-child(1), .foto__button._4:nth-child(1) {
+  top: 30.3%;
+  left: 29.9%;
+}
+
+.foto__button._3:nth-child(2), .foto__button._4:nth-child(2) {
+  top: 47.3%;
+  left: 65.8%;
+}
+
+.foto__button._3:nth-child(3), .foto__button._4:nth-child(3) {
+  top: 89.3%;
+  left: 34.7%;
+}
+
+.foto__button._3:nth-child(4), .foto__button._4:nth-child(4) {
+  top: 88.5%;
+  left: 60.3%;
+}
+
+.foto__button._3:nth-child(5), .foto__button._4:nth-child(5) {
+  top: 79.8%;
+  left: 83.4%;
+}
+
+.slider-nav {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+}
+
+.slider-nav._active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  opacity: 1;
+}
+
+.slider__foto {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  height: 100%;
+}
+
+.slider-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0%;
+}
+
+.slider-picture {
+  -webkit-transform: translateX(-187px) scaleX(1.027) translateY(0px);
+          transform: translateX(-187px) scaleX(1.027) translateY(0px);
+  overflow: hidden;
+  max-width: 1065px;
+}
+
+.slider-picture._active {
+  -webkit-transform: translateX(0px) scaleX(1) translateY(0);
+          transform: translateX(0px) scaleX(1) translateY(0);
+  -webkit-transition: 2s;
+  transition: 2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  width: 24px;
+}
+
+#menu__toggle {
+  opacity: 0;
+  width: 100%;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  opacity: 1;
+  right: 0;
+  display: block;
+}
+
+.menu__btn {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before {
+  display: block;
+  position: absolute;
+  width: 87%;
+  height: 2px;
+  background-color: #616161;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+  width: 100%;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: none;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 39px;
+  right: 0%;
+  width: 300px;
+  list-style: none;
+  background-color: #f9fbfd;
+  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.menu__item {
+  display: block;
+  padding: 10px 18px;
+  color: #404040;
+  font-family: "TT Travels-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+
+.buyButton-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.buyButton-block-wrap {
+  position: fixed;
+  bottom: -51px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.buyButton-block-wrap__button {
+  padding: 0;
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #5A30F0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.buyButton-block-wrap__button-text {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "TT Travels-DemiBold";
+  color: #FFFFFF;
+  -webkit-animation: asda 30s infinite linear;
+          animation: asda 30s infinite linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.buyButton-block-wrap__button:hover {
+  -webkit-transform: scale(1.2) translateY(-51px);
+          transform: scale(1.2) translateY(-51px);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+@-webkit-keyframes asda {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes asda {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1425px) {
+  .logo {
+    margin-right: 1%;
+  }
+  .switch,
+  .block-links {
+    margin-right: 1%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .block-connection {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: end;
+  }
+  .block-links {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .list-items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .feature__info-text {
+    padding: 5% 5% 0 5%;
+  }
+  .buyButton-block-wrap__button {
+    width: 156px;
+    height: 156px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .primary-block-text {
+    padding-left: 7.8%;
+    padding-top: 10.5%;
+  }
+  .header-info__title {
+    font-size: 65px;
+  }
+  .features {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .slider__title {
+    padding-bottom: 23%;
+  }
+  .buyButton-block-wrap__button {
+    width: 126px;
+    height: 126px;
+  }
+}
+
+@media (max-width: 785px) {
+  .primary-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .primary-block__picture {
+    width: 100%;
+  }
+  .header-info {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .information-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider__title {
+    padding-bottom: 4%;
+    padding-top: 2.5%;
+  }
+  .slider__menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 400px) {
+  .list-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .list-items__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .slider__menu {
+    min-width: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -384,7 +384,7 @@ select {
   text-align: center;
   font-family: "TT Travels-Medium";
   color: #404040;
-  padding-left: 12.8%;
+  padding-left: 12.1%;
   padding-right: 12%;
   display: inline-block;
   -webkit-margin-after: 0em;
@@ -431,15 +431,15 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1094px;
+  max-width: 1097px;
   margin: 0 auto;
-  padding-top: 10.65%;
+  padding-top: 10.5%;
   padding-right: 0.625%;
-  padding-bottom: 3.47%;
+  padding-bottom: 3.57%;
 }
 
 .information-block__info {
-  max-width: 414px;
+  max-width: 417px;
   padding-top: 1.11%;
 }
 
